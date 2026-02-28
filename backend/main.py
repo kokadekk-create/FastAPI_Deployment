@@ -16,9 +16,9 @@ def home():
     return {"message": "FastAPI backend running"}
 
 @app.get("/add")
-def add(a: int, b: int):
+def add(a: float, b: float):
     return {"result": a + b}
 
 @app.get("/multiply")
-def multiply(a: int, b: int):
+def multiply(a: float, b: float):
     return {"result": a * b}
